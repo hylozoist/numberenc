@@ -1,11 +1,13 @@
 numberenc
 =========
 This module generalizes initial phone number encoding problem formulation in some aspects.  I didn't make
-particular assumptions concerning phone mapping, insofar as symbol correctness is hard to validate without somewhat exhaustive search, but instead choose to explore pre-structured sample dictionary and, if needs be, to reconstruct it partially from phone code and then append. I consider it lexicographically sorted with unitary structure of phone-to-code correlative appendable relationship. 
+particular assumptions concerning phone mapping, insofar as symbol correctness is hard to validate without somewhat exhaustive search.I
 
-One could imagine dictionary pattern in text file "dictionary.txt" as "Phone␣CodePhrase"  with space symbol as tokens delimiter and next line marker as signifier of the end of a dictionary line.
+Instead it appears possible to explore pre-structured sample dictionary and, if needs be, to reconstruct it partially from phone code and then append. I consider it lexicographically sorted with unitary structure of phone-to-code correlative appendable relationship. 
 
-This way one could transform whole dictionary into a binary and then, after converting to list, snatch off the lines. 
+One can imagine dictionary pattern in text file "dictionary.txt" as "Phone␣CodePhrase"  with space symbol as tokens delimiter and next line marker as signifier of the end of a dictionary line.
+
+This way one can transform whole dictionary into a binary and then, after converting to list, snatch off the lines. 
 
 A single key can be associated with a lot of values in dict-type KV-list. Splitting complexity is linear. 
 
