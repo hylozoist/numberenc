@@ -18,3 +18,5 @@ In the following code, I prefer tail recursion for search via comparison and ins
 Running time is implementation-dependent, from O(N) to O(N log N). For the best case number of comparisons the algorithm must perform is about 2 ln N,  whilst height-balanced data structure is not so usual for appendable dictionary. Instead of use brutally balanced trees, we'll rely upon the dictionary quality. 
 
 For testing purposes, I've created decoding function inspired by LZW compressing step.
+
+Run code as usual via main/1. 
